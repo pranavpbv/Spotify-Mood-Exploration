@@ -11,6 +11,6 @@ Steps to run the project:
 5. Note the MySQL port number and change it in the project files.
 6. Create a database named "Spotify_Mood_Dataset" and have two tables named search_history and user as follows:
    <img width="1253" height="62" alt="image" src="https://github.com/user-attachments/assets/9c3c9811-56ba-49dc-9c9a-72a31f30a8eb" />
-   <img width="350" height="41" alt="image" src="https://github.com/user-attachments/assets/f34622f0-50d2-42b9-ae79-24eb691c4540" />
+   <img width="250" height="31" alt="image" src="https://github.com/user-attachments/assets/f34622f0-50d2-42b9-ae79-24eb691c4540" />
 7. Open the main.html file.
 And done, the project is running successfully.
