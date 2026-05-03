@@ -136,7 +136,7 @@ session_start();
 
 <script>
   const FLASK_API = 'https://spotify-similarity.onrender.com/api';
-  const PHP_BASE  = '/SpotifyMoodExploration'; 
+  const PHP_BASE  = ''; 
 
   let allTracks = [];
 
