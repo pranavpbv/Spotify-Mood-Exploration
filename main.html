@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Spotify Mood Exploration</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background-color: black;
+    font-family: helvetica;
+  }
+  .powerbi-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 40px 0;
+    background: black;
+  }
+  .powerbi-container {
+    position: relative;
+    width: 70%;
+    max-width: 1000px;
+    aspect-ratio: 16/9;
+    background: black;
+    overflow: hidden;
+  }
+  .powerbi-container iframe {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: calc(100% + 40px);
+    height: calc(100% + 35px);
+    border: none;
+  }
+  .powerbi-toolbar-cover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    background: black;
+    z-index: 10;
+    pointer-events: none;
+  }
+  .powerbi-side-cover-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 100%;
+    background: black;
+    z-index: 10;
+    pointer-events: none;
+  }
+  .powerbi-side-cover-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 100%;
+    background: black;
+    z-index: 10;
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+
+<div style="display: flex; align-items: center; justify-content: center; gap: 20px; color: #1DB954; padding-top: 20px;">
+  <img src="Pictures/Spotify_icon.png" alt="Spotify Logo" width="90">
+  <div style="text-align: left;">
+    <h1 style="margin: 0; text-align: center; font-size: 48px">Spotify Mood Exploration</h1>
+    <h2 style="margin: 0; font-size: 26px; text-align: center;">A Database Project by Carson and Pranav</h2>
+  </div>
+</div>
+
+<br><br><br>
+
+<div style="color: #1DB954; text-align: center;">
+  <h3>Login</h3>
+  <p>Login to get personalized insights</p><br>
+  <form action="login.php" method="POST">
+    <label>Username:</label><br>
+    <input type="text" style="background-color: lightgray; border-color: #1DB954; border-radius: 20px; padding: 3px" name="username" required><br><br>
+    <label>Password:</label><br>
+    <input type="password" style="background-color: lightgray; border-color: #1DB954; border-radius: 20px; padding: 3px" name="password" required><br><br>
+    <button style="background-color: #1DB954; color: black; border: none; border-radius: 25px; padding: 8px 20px; font-weight: bold; cursor: pointer;" type="submit" name="submit">Login</button>
+  </form>
+  <br>
+<a href="register.html" style="color: #1DB954">Click here to register now!</a>
+<br><br>
+</div>
+
+<!--<div style="display: flex; justify-content: center;">
+  <iframe style="background: black; border: none; border-radius: 2px; box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2); width: 70vw; height: 100vh;"
+    src="https://charts.mongodb.com/charts-project-0-drtjgsu/embed/dashboards?id=74a28dbe-b992-416f-b654-0895bb614bec&theme=dark&autoRefresh=true&maxDataAge=14400&showTitleAndDesc=true&scalingWidth=scale&scalingHeight=scale">
+  </iframe>
+</div>
+-->
+<div class="powerbi-wrapper">
+  <div class="powerbi-container">
+    <iframe
+      title="Sample"
+      src="https://app.powerbi.com/view?r=eyJrIjoiYmZlOGE1ZTAtNTQxNi00OTYwLTk3NDItNzBkM2RhODU0NThlIiwidCI6IjExMTNiZTM0LWFlZDEtNGQwMC1hYjRiLWNkZDAyNTEwYmU5MSIsImMiOjN9"
+      frameborder="0"
+      allowFullScreen="true">
+    </iframe>
+    <div class="powerbi-toolbar-cover"></div>
+    <div class="powerbi-side-cover-left"></div>
+    <div class="powerbi-side-cover-right"></div>
+  </div>
+</div>
+
+</body>
+</html>
